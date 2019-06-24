@@ -52,9 +52,24 @@
         <td> {{ a | percent }} </td>
       </tr>
       <tr>
-        <td> {{ a }} </td>
+        <td> {{ a }} </td>  
         <td> percent:'2.2-4' </td>
         <td> {{ a | percent:'2.2-4' }} </td>
+      </tr>
+      <tr>
+        <td> {{ salario }} </td>
+        <td> currency </td>
+        <td> {{ salario | currency }} </td>
+      </tr>
+      <tr>
+        <td> {{ salario }} </td>
+        <td> currency </td>
+        <td> {{ salario | currency:'EUR' }} </td>
+      </tr>
+      <tr>
+        <td> {{ salario }} </td>
+        <td> currency:'EUR':false:'4.0-0' </td>
+        <td> {{ salario | currency:'EUR':false:'4.0-0' }} </td>
       </tr>
     </tbody>
   </table>
