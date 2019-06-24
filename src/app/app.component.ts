@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { resolve, reject } from 'q';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,19 @@ export class AppComponent {
   PI = Math.PI;
   a:number = 0.234;
   salario = 1234.5;
+
+  heroe = {
+    nombre: 'Logan',
+    clave: 'Wolverine',
+    edad: 500,
+    direccion:{
+      calle: 'Primera',
+      casa: '19'
+    }
+  }
+
+  varlorDePromesa = new Promise( ( resolve, reject )=>{
+
+    setTimeout( ()=>resolve('LLego la data'),3500);
+  })
 }

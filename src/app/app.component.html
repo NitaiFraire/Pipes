@@ -71,6 +71,11 @@
         <td> currency:'EUR':false:'4.0-0' </td>
         <td> {{ salario | currency:'EUR':false:'4.0-0' }} </td>
       </tr>
+      <tr>
+        <td> {{ varlorDePromesa }} </td>
+        <td> async </td>
+        <td> {{ varlorDePromesa | async }} </td>
+      </tr>
     </tbody>
   </table>
   
@@ -78,5 +83,10 @@
   <ul>
     <li *ngFor="let item of arreglo | slice:5:20">{{ item }}</li>
   </ul>
+
+  <h4>Json</h4>
+  <pre>
+    {{ heroe | json }}
+  </pre>
 
 </div>
