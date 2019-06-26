@@ -30,4 +30,10 @@ export class AppComponent {
   })
 
   fecha = new Date();
+
+  nombre2 = 'javier dominGUEz rodRIguez';
+
+  video = 'D4CsYO942yw';
+
+
 }
